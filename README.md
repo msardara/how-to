@@ -1,2 +1,3 @@
-# how-to
-Useful tutorials 
+# Description
+
+This repo contains helpful how-to.
