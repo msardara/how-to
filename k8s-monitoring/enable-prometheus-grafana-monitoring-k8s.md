@@ -10,7 +10,7 @@ tar -xf helm-v2.13.1-linux-amd64.tar.gz
 pushd linux-amd64
 export PATH=${PATH}:$(pwd)
 helm init --history-max 200
-helm update
+helm repo update
 popd
 ```
 
