@@ -53,6 +53,12 @@ helm install --name prometheus stable/prometheus                                
 
 Be aware of the fact that this installation WILL NOT setup any volume, so the data collected by prometheus will be lost when the container stops. If you want a volume setup a persistent storage and remove the options `--set server.persistentVolume.enabled=false,alertmanager.persistentVolume.enabled=false`
 
+# Install influxdb
+
+```bash
+helm install stable/influxdb --name influxdb --namespace monitoring
+```
+
 # Install grafana
 
 ```bash
