@@ -28,7 +28,7 @@ If you do not have metric server on your local k8s cluster, install it:
 git clone https://github.com/kubernetes-incubator/metrics-server && cd metrics-server
 tmp_file=$(mktemp)
 met_ser_deploy="./deploy/1.8+/metrics-server-deployment.yaml"
-cat < EOF | tee ${tmp_file}
+cat << EOF | tee ${tmp_file}
         command:
         - /metrics-server
         - --kubelet-insecure-tls
