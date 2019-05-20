@@ -62,7 +62,9 @@ helm install stable/influxdb --name influxdb --namespace monitoring
 # Install grafana
 
 ```bash
-helm install --name grafana stable/grafana --namespace monitoring --set service.type=NodePort
+helm install --name grafana stable/grafana                                                \
+             --namespace monitoring                                                       \
+             --set service.type=NodePort,'grafana\.ini'.panels.disable_sanitize_html=true
 ```
 
 # Install kube-eagle
