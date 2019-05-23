@@ -42,6 +42,8 @@ chmod +x dind-cluster-v1.13.sh
 
 ## Delete
 
+If you want to delete the cluster
+
 ```bash
 ./dind-cluster-v1.13.sh clean
 ```
