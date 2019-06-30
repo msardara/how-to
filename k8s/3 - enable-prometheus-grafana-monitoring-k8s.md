@@ -17,7 +17,7 @@ popd
 # Create monitoring namespace
 
 ```bash
-kubectl create -f https://raw.githubusercontent.com/msardara/how-to/master/k8s-monitoring/monitoring-namespace.yaml
+kubectl create -f https://raw.githubusercontent.com/msardara/how-to/master/k8s/monitoring-namespace.yaml
 ```
 
 # Deploy metrics server
